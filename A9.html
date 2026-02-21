@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide-box {
+            width: 100%;
+            background-image: url("imgs/background.png");
+        }
+
+        .btn-slide {
+            display: none;
+        }
+
+        #s1:checked ~.btn-area > .slide1,
+        #s2:checked ~.btn-area > .slide2, 
+        #s3:checked ~.btn-area > .slide3 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-box">
+
+        <input type="radio" name="slide s1" id="s1" checked>
+        <input type="radio" name="slide s2" id="s2">
+        <input type="radio" name="slide s3" id="s3">
+
+        <div class="pic-area">
+            <div class="silde">
+                <div class="picture">
+                    <img src="imgs/1.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide1</span>
+                        <span>Cypresses and Green Wheat Field</span>
+                        <span>Vincent van Gogh, 1889</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/2.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide2</span>
+                        <span>The Painter and His Model</span>
+                        <span>Pablo Picasso, 1928</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/3.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide3</span>
+                        <span>The Little Street</span>
+                        <span>Johannes Vermeer, 1657~1658</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="silde">
+                <div class="picture">
+                    <img src="imgs/4.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide4</span>
+                        <span>Portrait of Bindo Altoviti</span>
+                        <span>Raphael, 1515</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/5.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide5</span>
+                        <span>The Metamorphosis of Narcissus</span>
+                        <span>Salvador Dal, 1937</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/6.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide6</span>
+                        <span>The Benois Madonna</span>
+                        <span>Leonardo da Vinci, 1478~1480</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="silde">
+                <div class="picture">
+                    <img src="imgs/7.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide7</span>
+                        <span>Boy with a Basket of Fruit</span>
+                        <span>Caravaggio, 1593~1594</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/8.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide8</span>
+                        <span>Young Hare</span>
+                        <span>Albrecht Drer, 1502</span>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="imgs/9.jpg" alt="pic">
+                    <div class="text-area">
+                        <span>slide9</span>
+                        <span>View of Toledo</span>
+                        <span>El Greco, 1596~1600</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-area">
+            <div class="btn-slide slide1">
+                <label for=""><button>&lt;</button></label>
+                <label for="s2"><button>></button></label>
+            </div>
+            <div class="btn-slide slide2">
+                <label for="s1"><button>&lt;</button></label>
+                <label for="s3"><button>></button></label>
+            </div>
+            <div class="btn-slide slide3">
+                <label for="s2"><button>&lt;</button></label>
+                <label for=""><button>></button></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
